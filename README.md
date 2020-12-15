@@ -1,1 +1,2 @@
-# Small game made while learning WPF :)
+# Tubes
+Small game made while learning WPF :)
