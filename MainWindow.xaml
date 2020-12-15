@@ -1,0 +1,74 @@
+﻿<Window x:Class="Tubes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tubes"
+        mc:Ignorable="d"
+        Title="Инфокс Водоканал Симулятор" Height="450" Width="450">
+    <Grid Margin="10" x:Name="MainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="buttonOpen" Margin="0 100 0 0" Content="Открыть" Height="50" Click="buttonOpen_Click"></Button>
+            <Button x:Name="buttonRefresh" Margin="0 0 0 100" Grid.Row="1" Content="Рестарт" Height="50" Click="buttonRefresh_Click"></Button>
+        </Grid>
+        
+        <Grid>
+            <GroupBox x:Name="GroupBoxButtons" Header="Нажимайте на трубы чтобы их крутить">
+                    <Grid x:Name="ButtonsGrid" Margin="10" ShowGridLines="False">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Click="Button_Click"></Button>
+                    <Button Click="Button_Click" Grid.Column="1"></Button>
+                    <Button Click="Button_Click" Grid.Column="2"></Button>
+                    <Button Click="Button_Click" Grid.Column="3"></Button>
+                    <Button Click="Button_Click" Grid.Column="4"></Button>
+
+                    <Button Click="Button_Click" Grid.Row="1"></Button>
+                    <Button Click="Button_Click" Grid.Row="1" Grid.Column="1"></Button>
+                    <Button Click="Button_Click" Grid.Row="1" Grid.Column="2"></Button>
+                    <Button Click="Button_Click" Grid.Row="1" Grid.Column="3"></Button>
+                    <Button Click="Button_Click" Grid.Row="1" Grid.Column="4"></Button>
+
+                    <Button Click="Button_Click" Grid.Row="2"></Button>
+                    <Button Click="Button_Click" Grid.Row="2" Grid.Column="1"></Button>
+                    <Button Click="Button_Click" Grid.Row="2" Grid.Column="2"></Button>
+                    <Button Click="Button_Click" Grid.Row="2" Grid.Column="3"></Button>
+                    <Button Click="Button_Click" Grid.Row="2" Grid.Column="4"></Button>
+
+                    <Button Click="Button_Click" Grid.Row="3"></Button>
+                    <Button Click="Button_Click" Grid.Row="3" Grid.Column="1"></Button>
+                    <Button Click="Button_Click" Grid.Row="3" Grid.Column="2"></Button>
+                    <Button Click="Button_Click" Grid.Row="3" Grid.Column="3"></Button>
+                    <Button Click="Button_Click" Grid.Row="3" Grid.Column="4"></Button>
+
+                    <Button Click="Button_Click" Grid.Row="4"></Button>
+                    <Button Click="Button_Click" Grid.Row="4" Grid.Column="1"></Button>
+                    <Button Click="Button_Click" Grid.Row="4" Grid.Column="2"></Button>
+                    <Button Click="Button_Click" Grid.Row="4" Grid.Column="3"></Button>
+                        <Button Click="Button_Click" Grid.Row="4" Grid.Column="4"></Button>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </Grid>
+</Window>
